@@ -16,7 +16,7 @@ let ce = document.getElementById('ce')
 let rectangles = document.querySelectorAll('.rectangles')
 
 // cookies
-document.cookie = 'cookie2=value2; Samesite=None; Secure'
+document.cookie = 'cookie2=value2; Samesite=None; Secure; path=/; max-age = 60;'
 
 
 

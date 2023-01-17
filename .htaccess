@@ -1,0 +1,17 @@
+# mod_rewrite starts here 
+
+RewriteEngine on 
+
+#dont run if name with directory exists 
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+#check file name with .html extension
+
+RewriteCond %{REQUEST_FILENAME}\.html -f 
+
+#show page with .html extension
+
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+RewriteRule ^home.*$ index.html?page=home [NC,L]

@@ -721,7 +721,7 @@ footer hr {
         font-size: 18px;
     }
 }
-@media only screen and (max-width:2600px) and (min-width:1920px){
+@media only screen and (max-width:2600px) and (min-width:1921px){
     body{
         max-width: 2600px;
     }
@@ -775,7 +775,7 @@ footer hr {
     }
 
 }
-@media only screen and (max-width:1920px) and (min-width:1600px){
+@media only screen and (max-width:1920px) and (min-width:1601px){
     body{
         max-width: 1920px;
     }
@@ -828,7 +828,7 @@ footer hr {
         font-size: 25px;
     }
 }
-@media only screen and (max-width:1600px) and (min-width:1440px) {
+@media only screen and (max-width:1600px) and (min-width:1441px) {
     body{
         max-width: 1600px;
     }

@@ -14,4 +14,4 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-RewriteRule ^home.*$ index.html?page=home [NC,L]
+RewriteRule ^index.*$ index.html [NC]

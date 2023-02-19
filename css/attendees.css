@@ -141,3 +141,7 @@ h2{
         text-align: center;
     }
 }
+
+#table-title {
+    margin-top: 8rem !important;
+}

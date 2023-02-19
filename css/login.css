@@ -101,6 +101,12 @@ button{
     position: relative;
 }
 
+.warning {
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+
 @media (max-width: 1600px){
     body{
         max-width: 1600px;

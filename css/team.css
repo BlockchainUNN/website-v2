@@ -1,0 +1,838 @@
+@font-face {
+    font-family: Monument Extended;
+    src: url(../fonts/MonumentExtended-Ultrabold.otf);
+}
+@font-face {
+    font-family: Montserrat Bold;
+    src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+hr{
+    width: 90px;
+    height: 5px;
+    background-color: #388E3C;
+}
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
+body::-webkit-scrollbar{
+    width: 6px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #b4cfb5;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #31B219;
+    border-radius: 100vw;
+}
+#blogo{
+    width: 370px;
+    margin: -9rem 0rem;
+    transform: translateY(.5rem);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-top: -1rem;
+    background-color: rgb(255, 255, 255);
+    margin-inline: 0rem;
+    padding-inline: 3rem;
+    z-index: 40;
+    position: fixed;
+    width: 1440px;
+    border-bottom: 5px solid gainsboro;
+}
+#navlogo{
+    width: 400px;
+    position: absolute;
+    top: 1rem;
+}
+/* nav img{
+    margin-bottom: -3rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+} */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+nav li a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+}
+nav li a:hover{
+    color: #388E3C;
+}
+
+/* nav bar ends  */
+
+.teamwu,.section{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.teamwu{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 8rem;
+}
+.teamwu::before{
+    content: '';
+    background-image: url(../images/aboutpics.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(10%);
+}
+#hlogo{
+    width: 500px;
+    animation: turn 8s linear infinite;
+}
+@keyframes turn {
+    30%,50%{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    80%,100%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+}
+.header{
+    margin-bottom: 2rem;
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.teamwu p{
+    position: relative;
+    font-size: 22px;
+    font-family: Montserrat;
+    line-height: 36px;
+    text-align: justify;
+    color: white;
+    text-align: justify;
+}
+.teamwu main{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    position: relative;
+}
+.header h1{
+    font-family: Monument Extended;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0rem;
+    color: #4a4a4a;
+    position: relative;
+    color: white;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.section h1{
+    font-family: Monument Extended;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 48px;
+    position: relative;
+}
+article{
+    display: flex;
+    gap: 3rem;
+}
+.one{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+    box-shadow: 10px 0px 10px 4px #e5e5e5;
+    clip-path: inset(-5px 0px -5px -5px);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.photo{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#kt{
+    width: 376px;
+    height: 420px;
+    object-fit: cover;
+    object-position: 0rem .1rem;
+    filter: grayscale(80%);
+}
+.one .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 800;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials{
+    display: flex;
+    gap: 1rem;
+}
+.socials img{
+    width: 24px;
+}
+h2{
+    font-family: Montserrat bold;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+}
+p{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #4a4a4a;
+    font-weight: 900;
+}
+footer {
+    margin-inline: 0rem;
+    margin-top: 8rem;
+    padding: 0rem 4rem;
+    background-color: #000000;
+}
+
+.logo {
+    width: 350px;
+    /* margin-right: 18rem; */
+    height: 350px;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.footer-container {
+    display: flex;  
+}
+.footer-container span{
+    display: flex;  
+}
+
+.footer-container p {
+    padding: 0rem 2rem 2rem;
+}
+
+
+.footer-container a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+footer h3{
+    font-family: 'Montserrat',;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+.orgs{
+    display: flex;
+    gap: 5rem;
+    float: right;
+    margin-top: -8rem;
+}
+.contact{
+    color: #fff;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: end;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 800;
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+.footer-container a:hover {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer hr {
+    border-style: none;
+    height: 0.5px;
+    background-color: rgb(162, 159, 159);
+    opacity: 0.3;
+    width: 100%;
+}
+#footerfb{
+    width: 40px;
+    margin-top: -8px;
+}
+#footerig{
+    width: 40px;
+    margin-top: -8px;
+}
+#ln{
+    background-color: white;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+@media (max-width:1400px) and (min-width:761px){
+    nav{
+        width: 100%;
+    }
+    .header h1{
+        margin-top: 8rem;
+    }
+}
+@media (max-width:1400px) and (min-width:1140px){
+    #kt{
+        width: 520px;
+    }
+}
+@media (max-width:1140px) and (min-width:761px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        z-index: 42;
+        width: 40px;
+        right: 1rem;
+        top: .75rem;
+    }
+    #close{
+        display: block;   
+        transform: translateX(400%);
+        position: absolute;
+        z-index: 100;
+        width: 20px;
+        right: 2rem;
+        top: 2rem;
+        transition: .55s linear;
+        z-index: 50;
+    }
+    nav main{
+        width: 100%;
+        background-color: white;
+        position: relative;
+        padding-top: 18px;
+        padding-bottom: 14px;
+    }
+    nav{
+        width: 100%;
+        padding-inline: 1rem;
+        margin-inline: 0rem;
+        padding-top: 1.75rem;
+        padding-bottom: .25rem;
+        margin-top: 0;
+        border-bottom: 2px solid gainsboro;
+    }
+    #navlogo{
+        top: -1.8rem;
+        width: 300px;
+    }
+    nav ul{
+        /* display: none; */
+        position:absolute;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        justify-content: initial;
+        background-color: #F5FFF3;
+        height: 100vh;
+        padding-left: 2rem;
+        padding-top: 5rem;
+        transition: .5s linear;
+        transform: translateX(100%);
+        z-index: 43;
+    }
+    #wu,#wu1{
+        font-size: 14px;
+    }
+    .teamwu{
+        gap: 0;
+    }
+    #hlogo{
+        width: 400px;
+    }
+    .header h1{
+        font-size: 30px;
+        margin-top: 5rem;
+    }
+    article{
+        flex-direction: column;
+    }
+    .one {
+        width: 100%;
+    }
+    footer{
+        position: relative;
+        /* height: 400px; */
+        padding-top: 6em;
+    }
+    .footer-div{
+        flex-direction: column;
+    }
+    .logo{
+        position: absolute;
+        top: 1rem;
+        height: 70px;
+        object-fit: cover;
+    }
+    .orgs{
+        float: none;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 0rem;
+    }
+    .contact{
+        margin-top: 0rem;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+ 
+}
+@media (max-width:1024px) and (min-width:670px){
+    nav{
+        padding-bottom: 10px;
+    }
+    #navlogo{
+        width: 250px;
+        top: -1.3rem;
+    }
+    footer{
+        position: relative;
+        /* height: 400px; */
+        padding-top: 6em;
+    }
+    .footer-div{
+        flex-direction: column;
+    }
+    .orgs{
+        float: none;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 0rem;
+    }
+    .contact{
+        margin-top: 0rem;
+        justify-content:center;
+        margin-top: 2rem;
+    }
+}
+@media (max-width:760px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        overflow: hidden;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        z-index: 42;
+        width: 40px;
+        right: 1rem;
+        top: 2rem;
+    }
+    #close{
+        display: block;   
+        transform: translateX(400%);
+        position: absolute;
+        z-index: 100;
+        width: 20px;
+        right: 2rem;
+        top: 2rem;
+        transition: .55s linear;
+        z-index: 50;
+    }
+    nav main{
+        width: 100%;
+        background-color: white;
+        position: relative;
+    }
+    #navlogo{
+        width: 250px;
+        top: -1.8rem;
+        left: -1.5rem;
+    }
+    nav{
+        width: 100%;
+        padding-inline: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin-inline: 0rem;
+    }
+    nav ul{
+        position:absolute;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        justify-content: initial;
+        background-color: #F5FFF3;
+        height: 100vh;
+        padding-left: 2rem;
+        padding-top: 5rem;
+        transition: .5s linear;
+        transform: translateX(100%);
+        z-index: 43;
+    }
+    article{
+        gap: 3.5rem;
+        flex-direction: column;
+    }
+    .header{
+        margin-top: 0rem;
+        width: 100%;
+        gap: 1rem;
+    }
+    .teamwu main{
+        width: 100%;
+        justify-content: center;
+    }
+    #hlogo{
+        width: 300px;
+    }
+    #wu,#wu1{
+        width: 100%;
+    }
+    .header h1{
+        font-size: 25px;
+        margin-top: 0rem;
+    }
+    .teamwu p{
+        font-size: 14px;
+    }
+    .teamwu,.section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .teamwu{
+        flex-direction: column-reverse;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        gap: 1rem;
+    }
+    .section h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #fuwuhr{
+        margin-bottom: 7px;
+    }
+    .one{
+        justify-content: left;
+        flex-direction: column;
+        box-shadow: 0px 0px 0px 0px #e5e5e5;
+        clip-path: inset(-5px 0px -5px 0px);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 100%;
+        margin-bottom: -8rem;
+    }
+    .header h1{
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left; 
+    }
+    .photo{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+        width: 100%;
+        margin-right: auto;
+    }
+    #kt{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+        padding-left: 2rem;
+        background-color: #fff;
+        transform: translateY(-10rem);
+    }
+    p{
+        width: 75%;
+    }
+    
+}
+@media (max-width:760px) and (min-width: 600px){
+    #kt{
+        width: 100%;
+        height: 620px;
+    }
+}
+@media (max-width:600px) and (min-width: 450px){
+    #kt{
+        width: 100%;
+        height: 520px;
+    }
+}
+@media (max-width:670px) {
+    footer{
+        margin-inline: -1rem;
+        text-align: center;
+        position: relative;
+        padding-top: 3rem;
+    }
+    .footer-div {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+    .footer hr{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+        padding-top: 1rem;
+    }
+    .footer-container span{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        width: 50vw;
+    }
+    .footer-container a{
+        font-size: 16px;
+    }
+    .logo{
+        margin-top: -6rem;
+        margin-bottom: -8rem;
+        position: absolute;
+        top: -15px;
+        left: -20px;
+    }
+    .orgs{
+        margin-top: 0;
+        gap: 1.5rem;
+        float: none;
+        margin-left: -1rem;
+        width: 100vw;
+        padding-bottom: 3rem;
+        align-items: center;
+    }
+    .orgs img{
+        width: 20px;
+    }
+    #footerfb{
+        width: 20px;
+        margin-top: 0x;
+    }
+    #footerig{
+        width: 20px;
+        margin-top: 0px;
+    } 
+    .orgs h3{
+        display: none;
+    }
+    .contact{
+        margin-top: -1rem;
+        justify-content: flex-start;
+        width: 100vw;
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+        text-align: left;
+    }
+    .contact h3{
+        font-size: 15px;
+        width: 100vw;
+        text-align: left;
+    }
+    .contact a{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:2600px) and (min-width:1921px){
+    body{
+        max-width: 2600px;
+    }
+    nav{
+        width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    .teamwu{
+        padding-top: 20rem;
+    }
+    .header h1{
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .teamwu p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    #hlogo{
+        width: 600px;
+    }
+    .text h2{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .text p{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    footer h1{
+        font-size: 40px;
+    }
+    footer a,footer p{
+        font-size: 28px;
+    }
+    #numbers{
+        font-size: 25px;
+    }
+
+}
+@media only screen and (max-width:1920px) and (min-width:1601px){
+    body{
+        max-width: 1920px;
+    }
+    nav{
+        width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    .teamwu{
+        padding-top: 20rem;
+    }
+    .header h1{
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .teamwu p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    #hlogo{
+        width: 600px;
+    }
+    .text h2{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .text p{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    footer h1{
+        font-size: 40px;
+    }
+    footer a,footer p{
+        font-size: 28px;
+    }
+    #numbers{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:1600px) and (min-width:1441px) {
+    body{
+        max-width: 1600px;
+    }
+    nav{
+        width: 100%;
+    }
+}

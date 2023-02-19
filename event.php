@@ -26,21 +26,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event</title>
-    <link rel="stylesheet" href="event.css" />
+    <link rel="stylesheet" href="./css/event.css" />
   </head>
   <body>
     <nav>
       <img src="./images/icons8-menu-rounded-50.png" alt="" id="menu" onclick="menuOpen()">
       <img src="./images/icon-close.svg" alt="" id="close" onclick="menuClose()">
       <main>
-      <a href="./index.html"><img src="./images/navLogo.png" alt="" id="navlogo"></a>
+      <a href="./index"><img src="./images/navLogo.png" alt="" id="navlogo"></a>
   </main>
       <ul id="navList">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="./index.html#comm">Community</a></li>
-          <li><a href="./event.html">Events</a></li>
-          <li><a href="./team.html">Team</a></li>
+          <li><a href="./index">Home</a></li>
+          <li><a href="./about">About Us</a></li>
+          <li><a href="./index#comm">Community</a></li>
+          <li><a href="./event">Events</a></li>
+          <li><a href="./team">Team</a></li>
           <li><a href="#foot">Contact</a></li>
       </ul>
   </nav>
@@ -401,6 +401,6 @@
 
 
   </body>
-  <script src="event.js"></script>
-  <script src="timer.js"></script>
+  <script src="./js/event.js"></script>
+  <script src="./js/timer.js"></script>
 </html>

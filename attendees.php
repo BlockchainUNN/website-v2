@@ -1,5 +1,11 @@
 <?php
     include_once("db-manager.php");
+    include_once("sessions.php");
+
+    $user_type = $_SESSION['type'];
+    if(!SessionManager::isLoggedIn() || $user_type == 'user'){
+        header("location:http://localhost/website-v2/index");
+    }
 
     $sql = "SELECT * FROM `attendees`";
     $result = mysqli_query($cxn, $sql) or die(mysqli_error($cxn));

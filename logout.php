@@ -9,5 +9,5 @@
         
     }
     
-    header("location:http://localhost/website-v2/index");
+    header("location:http://localhost/website-v2/login");
 ?>

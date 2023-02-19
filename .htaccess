@@ -6,12 +6,12 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-d 
 
-#check file name with .html extension
+#check file name with .php extension
 
-RewriteCond %{REQUEST_FILENAME}\.html -f 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
 
-#show page with .html extension
+#show page with .php extension
 
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^(.*)$ $1.php [NC,L]
 
-RewriteRule ^index.*$ index.html [NC]
+RewriteRule ^index.*$ index.php [NC]
